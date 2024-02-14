@@ -1,0 +1,15 @@
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики нолики.csproj.AssemblyReference.cache
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\MainWindow.g.cs
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\App.g.cs
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики нолики_MarkupCompile.cache
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики нолики_MarkupCompile.lref
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\bin\Debug\крестики нолики.exe.config
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\bin\Debug\крестики нолики.exe
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\bin\Debug\крестики нолики.pdb
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\MainWindow.baml
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики нолики.g.resources
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики_нолики.Properties.Resources.resources
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики нолики.csproj.GenerateResource.cache
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики нолики.csproj.CoreCompileInputs.cache
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики нолики.exe
+C:\Users\nfrol\Desktop\МПТ 2 курс\Prog.sln(2)\крестики нолики\крестики нолики\obj\Debug\крестики нолики.pdb

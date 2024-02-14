@@ -1,0 +1,22 @@
+﻿<Window x:Class="krestbl.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:krestbl" mc:Ignorable="d" Title="MainWindow" Height="400" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <UniformGrid x:Name="ButtonsGrid" Rows="3" Columns="3" Margin="20">
+            <Button x:Name="Button1" Command="{Binding ButtonCommand}" CommandParameter="1" />
+            <Button x:Name="Button2" Command="{Binding ButtonCommand}" CommandParameter="2" />
+            <Button x:Name="Button3" Command="{Binding ButtonCommand}" CommandParameter="3" />
+            <Button x:Name="Button4" Command="{Binding ButtonCommand}" CommandParameter="4" />
+            <Button x:Name="Button5" Command="{Binding ButtonCommand}" CommandParameter="5" />
+            <Button x:Name="Button6" Command="{Binding ButtonCommand}" CommandParameter="6" />
+            <Button x:Name="Button7" Command="{Binding ButtonCommand}" CommandParameter="7" />
+            <Button x:Name="Button8" Command="{Binding ButtonCommand}" CommandParameter="8" />
+            <Button x:Name="Button9" Command="{Binding ButtonCommand}" CommandParameter="9" />
+        </UniformGrid>
+
+        <Button x:Name="RestartButton" Grid.Row="1" Content="Начать заново" IsEnabled="{Binding IsRestartButtonEnabled}" Command="{Binding RestartCommand}" Margin="20" />
+    </Grid>
+</Window>
