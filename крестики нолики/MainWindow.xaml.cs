@@ -5,7 +5,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace TicTacToe
+namespace kn
 {
     public partial class MainPage : ContentPage
     {
@@ -23,11 +23,11 @@ namespace TicTacToe
             random = new Random();
             ButtonCommand = new Command<string>(ButtonClicked);
             RestartCommand = new Command(RestartClicked);
-            CreateButtonGrid();
+            Createbutton();
             EnableButtons(false);
         }
 
-        private void CreateButtonGrid()
+        private void Createbutton()
         {
             buttonGrid.Add(new List<Button>() { Button1, Button2, Button3 });
             buttonGrid.Add(new List<Button>() { Button4, Button5, Button6 });
@@ -54,12 +54,12 @@ namespace TicTacToe
             buttonGrid[row][col].Text = currentPlayer;
             buttonGrid[row][col].IsEnabled = false;
 
-            if (CheckWin(currentPlayer))
+            if (win(currentPlayer))
             {
                 DisplayAlert("Конец игры", $"{currentPlayer} победил!", "OK");
                 EnableButtons(false);
             }
-            else if (IsBoardFull())
+            else if (fullboard())
             {
                 DisplayAlert("Конец игры", "Ничья!", "OK");
                 EnableButtons(false);
@@ -67,15 +67,14 @@ namespace TicTacToe
             else
             {
                 currentPlayer = (currentPlayer == "X") ? "O" : "X";
-
                 if (currentPlayer == "O")
                 {
-                    MakeRobotMove();
+                    robotmove();
                 }
             }
         }
 
-        private bool CheckWin(string player)
+        private bool win(string player)
         {
             for (int i = 0; i < 3; i++)
             {
@@ -98,7 +97,7 @@ namespace TicTacToe
             return false;
         }
 
-        private bool IsBoardFull()
+        private bool fullboard()
         {
             foreach (var buttonRow in buttonGrid)
             {
@@ -127,10 +126,9 @@ namespace TicTacToe
             EnableButtons(true);
         }
 
-        private void MakeRobotMove()
+        private void robotmove()
         {
             List<Button> emptyButtons = new List<Button>();
-
             foreach (var buttonRow in buttonGrid)
             {
                 foreach (var button in buttonRow)
@@ -147,12 +145,12 @@ namespace TicTacToe
                 int index = random.Next(emptyButtons.Count);
                 emptyButtons[index].Text = currentPlayer;
                 emptyButtons[index].IsEnabled = false;
-                if (CheckWin(currentPlayer))
+                if (win(currentPlayer))
                 {
                     DisplayAlert("Конец игры", $"{currentPlayer} победил!", "OK");
                     EnableButtons(false);
                 }
-                else if (IsBoardFull())
+                else if (fullboard())
                 {
                     DisplayAlert("Конец игры", "Ничья!", "OK");
                     EnableButtons(false);
